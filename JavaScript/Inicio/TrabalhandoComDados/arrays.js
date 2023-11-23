@@ -61,7 +61,7 @@ const filterNumber = [1, 50, 65, 2, 5, 100]
 
 console.log(filterNumber); //filtra os elementos baseados nos paramêtros colocados
 
-//                                        arrow function
+//                                        arrow function  / numerosArray é um parametro, responsavel por guardar os valores que tem dentro da array
 const numeroMenor10 = filterNumber.filter( (numerosArray) => {
    //bloco de código - lógica
             //valores
@@ -71,7 +71,30 @@ const numeroMenor10 = filterNumber.filter( (numerosArray) => {
 
 console.log(numeroMenor10); //retorna os valores menores que 10
 
-// 5- map
-// 6- forEach
+// 5- map      modifica o array existente -> cria um novo array modificado
+const arrayMap = [1, 2, 3, 4, 5, 6]
+
+// modificação do array
+const arrayModificado = arrayMap.map ((ajudante) => {
+    //começar o bloco de código
+    
+    return ajudante * 2
+
+})
+
+console.log(arrayModificado)
+
+// 6- forEach -> 
+const arrayString = ["carlos", "andre", "julia", "akira"]
+
+arrayString.forEach( (elementos) => {
+
+    console.log(elementos)
+
+} )
+
 // 7- sort
+
+//Crie uma array de nomes e em seguida organize em ordem alfabética
+
 // 8- reduce
