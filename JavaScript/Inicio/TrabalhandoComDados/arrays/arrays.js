@@ -95,6 +95,18 @@ arrayString.forEach( (elementos) => {
 
 // 7- sort
 
+const arraySort = ["Jil", "Eli", "Ingrid", "Pietro", "Breno", "Rubens", "César", "Wally"]
+
+arraySort.sort()
+console.log(arraySort);
+
+
+const numerosArray = [40, 89, 10, 30, 12]
+
+numerosArray.sort();
+console.log(numerosArray);
+
+
 //Crie uma array de nomes e em seguida organize em ordem alfabética
 
 // 8- reduce
