@@ -17,24 +17,41 @@
         2 - Suco
         3 - Guaraná
         4 - Água
-        5 - Cappuccino
-        6 - Café
+        5 - Água com gás 
         `
         ))
 
-        var gelo;
+        var bebida;
+
+        var gelo = prompt("Deseja adicionar gelo na sua bebida?");
+
 
         switch (escolhaUser) {
-            case (5 || 6):
-                prompt("Sua é bebida é sem gelo")
+            case 1:
+                bebida = "Coca-Cola"
             break;
-       
+            case 2:
+                bebida = "Suco"
+            break;
+            case 3:
+                bebida = "Guaraná"
+            break;
+            case 4:
+                bebida = "Água"
+            break;
+            case 5:
+                bebida = "Água com gás"
+            break;
+
             default:
-                gelo = prompt("Deseja adicionar gelo?")
-                if (gelo == "sim") {
-                    
-                }
+                alert("Insira uma opção válida")
+break;
         }
+
+            if (gelo == "sim") {
+            alert(`A bebida escolhida foi ${bebida} com gelo`)
+}
+else {alert(`A bebida escolhida foi ${bebida} sem gelo`)}
 
 
     </script>
