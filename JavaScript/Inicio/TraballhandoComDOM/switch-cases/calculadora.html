@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // faça uma calculadora
+
+        const numero1 = Number(prompt("Insira o primeiro número para realizar a operação"))
+        const numero2 = Number(prompt("Insira o segundo número para realizar a operação"))
+        var resultado
+        const operacao = prompt(`Escolha o tipo de operação:
+        1 ou + -> Soma
+        2 ou - -> Subtração
+        3 ou * -> Multiplicação
+        4 ou / -> Divisão `)
+
+        switch (operacao) {
+
+            case 1: 
+                resultado = numero1 + numero2
+                alert(`O resultado é ${resultado}`)
+            break;
+
+            case 2:
+                resultado = numero1 - numero2
+                alert(`O resultado é ${resultado}`)
+
+            break;
+
+            case 3:
+                resultado = numero * numero2
+                alert(`O resultado é ${resultado}`)
+
+            break;
+
+            case 4:
+                resultado = numero1 / numero2
+                alert(`O resultado é ${resultado}`)
+
+            break;
+
+            default:
+                alert("Digite uma operação válida")
+            break;
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

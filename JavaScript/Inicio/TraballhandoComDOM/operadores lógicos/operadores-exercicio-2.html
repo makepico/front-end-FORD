@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // crie um programa para calcular a idade de uma pessoa em:
+    // meses - dias - horas - minutos
+
+    const idade = prompt("Qual a sua idade?")
+
+    var meses = idade * 12
+    var dias = idade * 365
+    var horas = dias * 24
+    var minutos = horas * 60
+
+    if (idade > 0 && idade < 100){
+        const escolhaUser = Number(prompt(`O que você deseja exibir?
+        1- Calculo em meses
+        2- Calculo em dias
+        3- Calculo em horas
+        4- Calculo em minutos`))
+
+        switch (escolhaUser) {
+
+            case 1:
+                alert(`A sua idade é de ${meses} meses`)
+            break;
+            
+            case 2:
+                alert(`A sua idade é de ${dias} dias`)
+            break;
+
+            case 3:
+                alert(`A sua idade é de ${horas} horas`)
+            break;
+
+            case 4:
+                alert(`A sua idade é de ${minutos} minutos`)
+            break;
+
+            default:
+                alert(`Digite um valor válido`)
+            break;
+
+        }
+
+    } else {
+        alert("Digite uma idade valida")
+    }
+
+    </script>
+</body>
+</html>
